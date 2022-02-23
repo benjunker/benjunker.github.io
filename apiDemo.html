@@ -77,6 +77,7 @@ img {margin-bottom: -7px}
 	<button type="button" id='next'>Next</button>
  </div>
 Powered By GIPHY
+1
 
 
 <!-- End Page Content -->
@@ -248,6 +249,7 @@ function next() {
 }
 
 
+console.log(trendUrl)
 fetch(trendUrl)
 .then(response =>{
     return response.json();
@@ -288,6 +290,7 @@ function surprise() {
 		adjOffset = offset*12;
 		tmpSearchUrl = searchUrl + "&q=" + query;
 		offset=0;
+		console.log(tmpSearchUrl)
 		fetch(tmpSearchUrl)
 		.then(response =>{
 		    return response.json();
